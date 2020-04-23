@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <title>Mis servicios y productos</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Tienda Movistar">
+    <meta name="description" content="Sección de mis servicios y productos Movistar">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <!--fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <a href="#">
+                    <div class="col-1">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                </a>
+                <div class="col-10">
+                    <h1>Mis servicios y productos</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs w-100" id="initial" role="tablist">
+                        <li class="nav-item w-50">
+                            <a class="nav-link active" id="tab-servicios tab-nuevo-s" data-toggle="tab" href="#servicios" role="tab" aria-controls="servicios" aria-selected="true" title="Ver servicios" aria-label="Resumen de mis servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item w-50">
+                            <a class="nav-link" id="tab-productos tab-nuevo-p" data-toggle="tab" href="#productos" role="tab" aria-controls="productos" aria-selected="false" title="Ver mis productos" aria-label="Resumen de mis productos">Productos</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="servicios-productos">
+                        <!--contenido primer tab-->
+                        <div class="tab-pane fade show active" id="servicios" role="tabpanel" aria-labelledby="servicios">
+                            <h2 class="titulos">Servicios activos</h2>
+                            <div class="row">
+                                <div class="col-12 datos">
+                                    <p>
+                                        <button class="btn btn-servicios d-flex" type="button" data-toggle="collapse" data-target="#desvio-llamadas" aria-expanded="false" aria-controls="desvio-llamadas">
+                                            <div class="col datos-serv"><img src="images/desvio-llamadas.svg" alt="" aria-hidden="true"><span class="text-btn-servicios">Desvio de llamada</span></div>
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="desvio-llamadas">
+                                        <div class="card card-body">
+                                            <div class="col-12"><label>Número destino</label>
+                                                <p>1481020474</p>
+                                            </div>
+                                            <div class="col-12 servicios"><label>Estado</label>
+                                                <p class="activo">Activo</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 datos">
+                                    <p>
+                                        <button class="btn btn-servicios d-flex" type="button" data-toggle="collapse" data-target="#idllamada" aria-expanded="false" aria-controls="idllamada">
+                                            <div class="col datos-serv"><img src="images/id-llamadas.svg" alt="" aria-hidden="true"><span class="text-btn-servicios">ID de llamada</span></div>
+                                        </button>
+                                    </p>
+                                    <!--<div class="collapse" id="idllamada">
+                        <div class="card card-body">
+                            
+                        </div>
+                    </div>-->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 datos">
+                                    <p>
+                                        <button class="btn btn-servicios d-flex" type="button" data-toggle="collapse" data-target="#roaming" aria-expanded="false" aria-controls="roaming">
+                                            <div class="col datos-serv"><img src="images/roamming.svg" alt="" aria-hidden="true"><span class="text-btn-servicios">Roamming</span></div>
+                                        </button>
+                                    </p>
+                                    <!--<div class="collapse" id="roaming">
+                        <div class="card card-body">
+                                                    </div>
+                    </div>-->
+                                </div>
+                            </div>
+
+                            <h2 class="titulos">Pendientes de activación</h2><small>No tienes servicios pendientes de activación</small>
+                        </div>
+                        <!--segundo tab-->
+                        <div class="tab-pane fade" id="productos" role="tabpanel" aria-labelledby="productos">
+                            <h2 class="titulos">Lista de mis productos</h2>
+                            <div class="row">
+                                <ul class="list-productos">
+                                    <li>
+                                        <p class="branding">SAMSUNG</p>
+                                        <p class="clase-producto">Equipo telefónico inalámbrico hogar</p>
+                                    </li>
+                                    <li>
+                                        <p class="branding">Motorola</p>
+                                        <p class="clase-producto">Moto G6</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <h2 class="titulos">Pendientes de recepción</h2>
+                            <div class="row">
+                                <div class="col-12 datos">
+                                    <p>
+                                        <button class="btn btn-servicios d-flex pendientes" type="button" data-toggle="collapse" data-target="#prod-pending" aria-expanded="false" aria-controls="prod-pending">
+                                            <div class="col-1 datos-serv"><img src="images/equipo-nuevo.svg" alt="" aria-hidden="true"></div>
+                                            <div class="col-9">
+                                                <p class="text-btn-servicios">Moto G8 Motorola</p>
+                                                <p>Motorola</p>
+                                            </div>
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="prod-pending">
+                                        <div class="card card-body">
+                                            <div class="col-12">
+                                                <h2>Información</h2>
+                                                <div class="col-12">
+                                                    <label>ID de producto:</label>
+                                                    <p>66523546</p>
+                                                </div>
+                                                <div class="col-12 servicios">
+                                                    <label>Estado</label>
+                                                    <p class="enprogreso">En delivery</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <h2>Detalle</h2>
+                                            </div>
+                                            <!--progress bar-->
+                                            <ul class="timeline">
+                                                <li>
+                                                    <a target="_blank" href="#">Compra</a>
+                                                    <a href="#">20 Abril, 2020</a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="#">En proceso de envío</a>
+                                                    <a href="#">21 Abril, 2020</a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="enprogreso">En delivery</a>
+                                                    <a href="#">22 April, 2020</a>
+
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
