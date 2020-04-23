@@ -26,10 +26,8 @@
 		<main>
 			<template v-for="(section, name) in requests">
 				<section :id="name" v-if="page == name">
+
 					<fieldset v-for="item in section">
-						<legend>
-							Action '<code>{{ item.action }}</code>'
-						</legend>
 						<div class="content">
 							<div class="request">
 								<h4>Request:</h4>
@@ -55,6 +53,7 @@
 							</div>
 						</div>
 					</fieldset>
+					
 				</section>
 			</template>
 		</main>

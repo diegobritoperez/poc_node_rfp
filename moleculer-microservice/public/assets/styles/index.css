@@ -20,19 +20,22 @@ body {
 
 header, footer {
     text-align: center;
-    color: white;
+    color: rgba(0, 0, 0, 0.63);
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
 header {
-    background-color: #464b7c;
+    /* background-color: #464b7c;
+     */
+    background: rgb(1,169,224);
+    background: linear-gradient(90deg, rgba(1,169,224,1) 0%, rgba(227,227,232,1) 36%, rgba(227,227,232,1) 62%, rgba(1,169,224,1) 100%);
     padding: 1em;
     box-shadow: 0 3px 10px rgba(0,0,0,0.6);
     margin-bottom: 1em;
 }
 
 footer {
-    background-color: #464b7c;
+    background-color: #01A9E0;
     padding: 0.75em;
     font-size: 0.8em;
     box-shadow: 0 -3px 10px rgba(0,0,0,0.6);
@@ -67,7 +70,7 @@ nav ul li.active {
 }
 
 nav ul li:hover {
-    color: #63dcfd;
+    color: black;
 }
 
 button, .button {
